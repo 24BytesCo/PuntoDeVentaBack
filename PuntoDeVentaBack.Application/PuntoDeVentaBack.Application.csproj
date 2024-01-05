@@ -23,4 +23,10 @@
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PuntoDeVentaBack.Domain\PuntoDeVentaBack.Domain.csproj" />
+    <ProjectReference Include="..\PuntoDeVentaBack.Infraestructure\PuntoDeVentaBack.Infraestructure.csproj" />
+    <ProjectReference Include="..\PuntoDeVentaBack.Utilities\PuntoDeVentaBack.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

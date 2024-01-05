@@ -21,4 +21,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PuntoDeVentaBack.Application\PuntoDeVentaBack.Application.csproj" />
+    <ProjectReference Include="..\PuntoDeVentaBack.Infraestructure\PuntoDeVentaBack.Infraestructure.csproj" />
+    <ProjectReference Include="..\PuntoDeVentaBack.Utilities\PuntoDeVentaBack.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

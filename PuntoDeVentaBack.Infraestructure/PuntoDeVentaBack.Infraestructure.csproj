@@ -19,4 +19,9 @@
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PuntoDeVentaBack.Domain\PuntoDeVentaBack.Domain.csproj" />
+    <ProjectReference Include="..\PuntoDeVentaBack.Utilities\PuntoDeVentaBack.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>

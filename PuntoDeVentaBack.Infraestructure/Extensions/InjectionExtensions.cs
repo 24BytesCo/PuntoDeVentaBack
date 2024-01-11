@@ -15,11 +15,11 @@ namespace PuntoDeVentaBack.Infraestructure.Extensions
         // Extensión que agrega configuraciones de inyección de dependencias para la infraestructura.
         public static IServiceCollection AddInjectionInfraestructure(this IServiceCollection services, IConfiguration configuration)
         {
-            // Obtiene el nombre completo del ensamblado que contiene la clase posContext.
-            var assembly = typeof(posContext).Assembly.FullName;
+            // Obtiene el nombre completo del ensamblado que contiene la clase PosContext.
+            var assembly = typeof(PosContext).Assembly.FullName;
 
-            // Agrega el DbContext posContext a los servicios con configuraciones específicas.
-            services.AddDbContext<posContext>(
+            // Agrega el DbContext PosContext a los servicios con configuraciones específicas.
+            services.AddDbContext<PosContext>(
 
                 // Configura el DbContext para utilizar SQL Server con la cadena de conexión obtenida desde la configuración.
                 options => options.UseSqlServer(

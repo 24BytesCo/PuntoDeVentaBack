@@ -4,13 +4,13 @@ using System.Reflection;
 
 namespace PuntoDeVentaBack.Infraestucture.Context
 {
-    public partial class posContext : DbContext
+    public partial class PosContext : DbContext
     {
-        public posContext()
+        public PosContext()
         {
         }
 
-        public posContext(DbContextOptions<posContext> options)
+        public PosContext(DbContextOptions<PosContext> options)
             : base(options)
         {
         }

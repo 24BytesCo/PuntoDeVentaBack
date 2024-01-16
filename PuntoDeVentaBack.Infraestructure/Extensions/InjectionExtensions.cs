@@ -1,12 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PuntoDeVentaBack.Infraestructure.Persistences.Interfaces;
+using PuntoDeVentaBack.Infraestructure.Persistences.Repositories;
 using PuntoDeVentaBack.Infraestucture.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PuntoDeVentaBack.Infraestructure.Extensions
 {
@@ -29,6 +26,9 @@ namespace PuntoDeVentaBack.Infraestructure.Extensions
                 // Establece el tiempo de vida del DbContext como Transient.
                 ServiceLifetime.Transient
             );
+
+            //Configuracion del patron UnitOfWork
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             // Devuelve la colección de servicios para permitir la encadenación de métodos.
             return services;
